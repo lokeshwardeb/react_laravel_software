@@ -9,7 +9,7 @@ Route::get('/', function () {
 
     // return inertia('Home');
 
-});
+})->name('home');
 
 // Route::inertia('/', 'Home');
 
@@ -18,7 +18,7 @@ Route::inertia('/test', 'Test', [
     'data' => 'hello'
 ]);
 
-Route::post('/user', [PostController::class, 'create_post']);
+Route::post('/users', [PostController::class, 'create_post']);
 
 // Route::inertia('/test', 'Test.jsx');
 
